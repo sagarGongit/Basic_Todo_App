@@ -46,7 +46,7 @@ todoRouter.post("/add-todo", async (req, res) => {
     }
   } catch (error) {
     res.status(509).json({
-      message: `internal server error occured while adding todo err : ${error}`,
+      message: `internal server error occured while adding todo err : ${error.message}`,
     });
   }
 });
@@ -105,7 +105,7 @@ todoRouter.get("/get-todo", async (req, res) => {
     }
   } catch (error) {
     res.status(500).json({
-      message: `internal server err occured during fetching todos : ${error}`,
+      message: `internal server err occured during fetching todos : ${error.message}`,
     });
   }
 });

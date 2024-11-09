@@ -64,7 +64,7 @@ userRoute.post("/register", async (req, res) => {
     }
   } catch (error) {
     res.status(500).json({
-      message: `internal error occured during register err : ${error}`,
+      message: `internal error occured during register err : ${error.message}`,
     });
   }
 });
@@ -117,7 +117,7 @@ userRoute.post("/login", async (req, res) => {
     });
   } catch (error) {
     res.status(500).json({
-      message: `internal error occured during login err : ${error}`,
+      message: `internal error occured during login err : ${error.message}`,
     });
   }
 });
@@ -149,7 +149,6 @@ userRoute.get(
     } catch (error) {
       res.status(509).json({
         message: "error occured during fetching users",
-        error: error,
       });
     }
   }

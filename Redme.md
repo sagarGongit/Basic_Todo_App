@@ -20,3 +20,4 @@
 1. <h3>Implementing the searching and sorting functionality</h3>
 2. <h3>filtering functionality</h3>
 3. <h3>Google Authentication using passport module</h3>
+4. <h3>implementing soket.io for feel like real time application update</h3>
