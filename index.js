@@ -9,10 +9,8 @@ const cors = require("cors");
 const policyRoute = require("./privacy/policy");
 const termsRoute = require("./terms/terms");
 
-server.use(cors("*"));
-
 const server = express();
-
+server.use(cors({ origin: "*" }));
 server.use(express.json());
 
 server.use("/user", userRoute);
